@@ -23,7 +23,7 @@ if !GetKeyState("LButton", "P")
 
    Sleep 200  ; give time for the context menu to appear
 
-   Send {Esc} ; close it
+   Send {Esc} ; close it 
 run ,open f:/
 }
 else
