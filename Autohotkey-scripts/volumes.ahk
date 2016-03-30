@@ -9,7 +9,18 @@ Process, Priority, ,High
 #MenuMaskKey vk07  ;  is used to mask Win or Alt keyup events
 ; http://ahkscript.org/docs/commands/_MenuMaskKey.htm
 return
-
+; This file is created for multitasking using with 5 button mouse button. The mouse used in logitech Mx570.
+;  Holding left click and pressing right click at the same time copies the selected text
+;Pressing the right click twice will paste the text.
+; Holding right click and pressing the middle scrolling button will increase the volume 
+;Holding right click and pressing the left button will decrease the volume.
+; Srolling wheel up while the cursor is at the taskbar will open f: or any defined path
+;Scrolling wheel up while at the taskbar will mute the volume
+; Holding right click and presing the x1 button will minimise google chrome and pressing the same  button will maximise it.
+;Pressing x2 button while holding right click will open task manager.
+; This functions dont interfere will normal mouse usage and increase the workflow.
+; 
+;
 
 ~RButton::
 if !GetKeyState("LButton", "P")
