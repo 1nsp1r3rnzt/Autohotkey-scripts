@@ -14,7 +14,7 @@ return
 ;Pressing the right click twice will paste the text.
 ; Holding right click and pressing the middle scrolling button will increase the volume 
 ;Holding right click and pressing the left button will decrease the volume.
-; Srolling wheel up while the cursor is at the taskbar will open f: or any defined path
+; Srolling wheel up while the cursor is at the taskbar will open G: or any defined path
 ;Scrolling wheel up while at the taskbar will mute the volume
 ; Holding right click and presing the x1 button will minimise google chrome and pressing the same  button will maximise it.
 ;Pressing x2 button while holding right click will open task manager.
