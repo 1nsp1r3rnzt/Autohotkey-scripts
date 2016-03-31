@@ -1,7 +1,7 @@
 CoordMode, Mouse, Screen
-;This script hides the chrome address bar by displaying a fake location ba pngr on the top of google ch
+;This script hides the chrome address bar by displaying a fake location bar image (png) on the top of google chrome
 ; Useful trick to have more privacy
-;overlays on chrome and minimize itself if chrome is minimize
+;overlays on chrome and minimize itself if chrome is minimized
 ; Has transparent area where google chrome back, next button are to make it work with other script which use those button images
 ; still to do is is to make it resize according to google chrome window's size.
 ;demo is at https://github.com/1nsp1r3rnzt/Autohotkey-scripts/blob/master/Autohotkey-scripts/chrome%20demo.gif?raw=true
@@ -19,14 +19,14 @@ return
 
 WatchCursor:
 MouseGetPos, x, y
-	If ( y > 124) { ;if cursors in top right region x < 2560 &&
+	If ( y > 124) { ;if cursors in top right region ;change this area accordingly
 
 	IfWinActive, ahk_class Chrome_WidgetWin_1
 {
 
 	WinGetPos, XWin, YWin,width,height, ahk_class Chrome_WidgetWin_1 
 	
-	Gui, add, picture,, d:\fake.png
+	Gui, add, picture,, d:\fake.png          ; this is the location of the image
 Gui, Show,x-10 y-10 NoActivate
 }
 sleep 100
