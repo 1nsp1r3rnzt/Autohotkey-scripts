@@ -44,7 +44,8 @@ else
    Send {Esc} ; close it
 send {CTRLDOWN}v{CTRLUP}
 }
-   TrayTip,,You double clicked! ; Your script would go here
+   TrayTip,,You double clicked! ; 
+   would go here
 return
    }
  }
@@ -87,12 +88,12 @@ If (A_ThisHotkey = A_PriorHotkey && A_TimeSincePriorHotkey < 300)
 {
 Send, #d
 
-TrayTip,,paste done ; Your script would go here
+TrayTip,,paste done ; 
 return
 }
 Else
 Send, {CTRLDOWN}c{CTRLUP}
-	   TrayTip,,copy done ; Your script would go here
+	   TrayTip,,copy done ; 
 	   return
 }
 return
